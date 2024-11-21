@@ -40,7 +40,7 @@ const Navbar = () => {
   }, [isCateNav, isAcc, isCart]);
 
   return (
-    <section className="bg-[#F5F5F3] py-[15px] sm:py-[20px]">
+    <section className="bg-[#F5F5F3] py-[15px] sm:py-[20px] mx-2 lg:mx-0">
       <Container>
         <Flex className="items-center flex-wrap md:flex-nowrap">
          

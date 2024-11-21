@@ -10,8 +10,8 @@ const ImgSale = () => {
     <section className='py-[30px]'>
         <Container>
         <Flex>
-          <div className="justify-between">
-                <div className="w-[49%]">
+          <div className="justify-between w-[49%] mt-1">
+                <div className="">
                     <img className='w-[100%]' src={Imgoneee} alt="" />
                 </div>
             </div>
@@ -19,7 +19,7 @@ const ImgSale = () => {
                 <div className="">
                     <img src={ImgTwo} alt="" />
                 </div>
-                <div className="mt-10 ">
+                <div className="lg:mt-8 mt-[15px]">
                     <img src={ImgThree} alt="" />
                 </div>
             </div>

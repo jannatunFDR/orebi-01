@@ -28,11 +28,11 @@ const Header = () => {
   <div  className="w-[10%] ms-auto lg:hidden" onClick={()=>dropDown(show)} >
     { show == true ?  <ImCross className='text-[15px]' />: <FaBars className='text-[20px]' />}
    </div>
-   
-    <div className={`absolute left-[30%] transform transition-all duration-500 ease-in-out z-[999] bg-white w-[50%] py-5 shadow-md ${show ? 'top-[60px] opacity-100 translate-y-0' : 'top-[10%] opacity-0 -translate-y-4 pointer-events-none'}`}>
+   {/* pointer-events-none -translate-y-4 delay-[${index * 50}ms] translate-y-4 translate-y-0*/}
+    <div className={`absolute left-[50%] transform transition-all duration-300 ease-in-out z-[999] bg-white w-[50%] py-5 shadow-md ${show ? 'top-[60px] opacity-100' : 'top-[10%] opacity-0'}`}>
           <ul className={`flex flex-col items-center gap-[10px]`}>
             {['Home', 'Shop', 'About', 'Contact', 'Journal'].map((item, index) => (
-              <li key={index} className={`text-[#979797] font-normal text-[14px] font-sans hover:text-[#000] duration-500 transition-transform transform ${show ? 'translate-y-0 opacity-100 delay-[${index * 50}ms]' : 'translate-y-4 opacity-0'}`} style={{ transitionDelay: `${index * 50}ms` }}>
+              <li key={index} className={`text-[#979797] font-normal text-[14px] font-sans hover:text-[#000] duration-300 transition-transform transform ${show ? 'opacity-100' : 'opacity-0'}`} style={{ transitionDelay: `${index * 50}ms` }}>
                 {item}
               </li>
             ))}

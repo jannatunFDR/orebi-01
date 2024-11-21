@@ -9,7 +9,7 @@ import { AiOutlineReload } from "react-icons/ai";
 const Info = () => {
   return (
     <Container>
-                <Flex className="justify-between pb-4 items-center">
+                <Flex className="justify-between pb-4 items-center mx-2">
                     <div className=" flex items-center">
                         <div className=" ">
                             <span className='font-dm text-[#262626] font-bold lg:text-[24px]   text-[12px] pr-2'>2</span> 
